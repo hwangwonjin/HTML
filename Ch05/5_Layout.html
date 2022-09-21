@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5_Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wapper{
+            width: 800px;
+            height: auto;
+            background-color: #aaa;
+            margin:10px auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 120px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+        }
+        main{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        main > section {
+            height: 400px;
+            width: 530px;
+            background-color: #eee;
+        }
+        main > aside {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 220px;
+            height: 400px;
+            background-color: #eee;
+        }
+        footer{
+            width: 100%;
+            height: 120px;
+            background-color: #ccc;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wapper">
+        <header>
+            <h3>header</h3>
+
+            </header>
+        <main>
+            <h3>main</h3>
+            <section>
+                <h3>section</h3>
+            </section>
+            <aside>
+                <h3>aside</h3>
+            </aside>
+        </main>
+        <footer>
+            <h3>footer</h3>
+        </footer>
+    </div>
+</body>
+</html>
