@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글보기</title>
+    <link rel="stylesheet" href="../Board/css/style.css">
+    
+    <style>
+        #board > .veiw{}
+        #board > .veiw table{}
+        #board > .veiw table caption{}
+        #board > .veiw table tr{}
+        #board > .veiw table tr > td{}
+
+
+    </style>
+    
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+            <h3> Board System v1.0</h3>
+            <p>
+                <span>홍길동</span>님 반갑습니다.
+                <a href="#">[로그아웃]</a>
+            </p>
+        </header>
+        <main id="board">
+            <section class="view">
+                
+                   <table border="1">
+                    <caption>글보기</caption>
+                    <tr>
+                        <td>제목</td>
+                        <td>
+                            <input type="text" name="title" value="제목입니다.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>첨부파일</td>
+                        <td>
+                            <a href="#">2020년 상반기 매출자료</a>
+                            <span>7회 다운로드</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>내용</td>
+                        <td>
+                           <textarea name="content" >내용 샘플입니다.</textarea>
+                        </td>
+                    </tr>
+                   </table>
+                   <div>
+                    <a href="#" class="btn btnDelete">삭제</a>
+                    <a href="#" class="btn btnModify">수정</a>
+                    <a href="#" class="btn btnlist">목록</a>
+                   </div>
+                   <section class="commentList">
+                    <caption>댓글목록</caption>
+                    <article border="1">
+                        <span>
+                            <span>길동이</span>
+                            <span>20-05-13</span>
+                        </span>
+                        <textarea name="commet">댓글 샘플입니다.</textarea>
+                        <div>
+                            <a href="#">삭제</a>
+                            <a href="#">수정</a>
+                        </div>
+                    </article>
+                    <p class="empty">등록된 댓글이 없습니다. </p>
+                   </section>
+                   <section class="commentForm">
+                    <caption>댓글쓰기</caption>
+                    <form action="#">
+                        <textarea name="comment"></textarea>
+                        <div>
+                            <a href="#" class="btn btnCancle">취소</a>
+                            <input type="text" class="btn btnWrite" value="작성완료">
+                        </div>
+                    </form>
+                   </section>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright chhak.or.kr</p>
+        </footer>
+    </div>
+</body>
+</html>
