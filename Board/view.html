@@ -92,7 +92,9 @@
         }
         
 
-        #board> .view> .commentForm{}
+        #board> .view> .commentForm{
+            overflow: hidden;
+        }
         #board> .view > .commentForm  textarea{
             width: 100%;
             height: 60px;
@@ -134,7 +136,7 @@
                     <tr>
                         <td>첨부파일</td>
                         <td>
-                            <a href="#">2020년 상반기 매출자료</a>
+                            <a href="#">2020년 상반기 매출자료.xls</a>
                             &nbsp;<span>7</span>회 다운로드
                         </td>
                     </tr>
@@ -157,7 +159,7 @@
                     <article border="1">
                         <span class="nick">길동이</span>
                         <span class="date">20-05-13</span>
-                        <p name="content">댓글 샘플입니다.</p>
+                        <p class="content">댓글 샘플입니다.</p>
                         <div>
                             <a href="#" class="remove">삭제</a>
                             <a href="#" class="modify">수정</a>
