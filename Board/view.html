@@ -6,11 +6,106 @@
     <link rel="stylesheet" href="../Board/css/style.css">
     
     <style>
-        #board > .veiw{}
-        #board > .veiw table{}
-        #board > .veiw table caption{}
-        #board > .veiw table tr{}
-        #board > .veiw table tr > td{}
+        #board> .view{
+          width: 720px;
+          height: auto;
+          
+          margin: 60px auto;
+          overflow: hidden;
+      }
+      #board> .view > table{
+          width: 100%;
+          height: auto;
+          border-top: 2px solid #111;
+          border-collapse: collapse;
+          border-spacing: 0;
+          margin-top: 6px;
+      }
+      #board> .view > table tr{}
+      #board> .view > table >caption{
+          text-align: left;
+          margin-bottom: 4px;
+      }
+      #board> .view > table tr > td{
+          padding: 12px 6px;
+          border: 1px solid #e9e9e9;
+          
+      }
+      #board> .view > table tr > td:nth-child(1){
+          width: 100px;
+          background: #f5f8f9;
+          text-align: center;
+      }
+      
+      #board> .view > table tr > td > input{
+          width: 400px;
+          height: 24px;
+          border: 0;
+      }
+      #board> .view > table tr > td > textarea{
+          width: 100%;
+          height: 280px;
+          resize: none;
+          border: none;
+      }
+
+      #board> .view > div {
+        text-align: right;
+        margin-top: 10px;
+      }
+
+      #board> .view > section{
+        width: 100%;
+        height: auto;
+        border: 1px solid #e3e3e3;
+        box-sizing: border-box;
+        margin-top: 10px;
+        padding: 16px;
+        background: #f9f9f9;
+      }
+      #board> .view > section> h3{
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: 1px dotted #111;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+      }
+
+
+        #board> .view > .commentList{}
+        #board> .view > .commentList >article{
+            overflow: hidden;
+        }
+        #board> .view > .commentList .nick{}
+        #board> .view > .commentList .date{}
+        #board> .view > .commentList .content{
+            padding: 10px;
+        }
+        #board> .view > .commentList >article > div{
+            float: right;
+        }
+        #board> .view > .commentList >article .remove{}
+        #board> .view > .commentList >article .modify{}
+        #board> .view > .commentList > .empty{
+            margin: 20px;
+            text-align: center;
+        }
+        
+
+        #board> .view> .commentForm{}
+        #board> .view > .commentForm  textarea{
+            width: 100%;
+            height: 60px;
+            border: 1px solid #e4eaec;
+            padding: 6px;
+            box-sizing: border-box;
+            resize: none;
+        }
+        #board> .view> .commentForm > form>div{
+            float: right;
+            margin-top: 10px;
+        }
+
 
 
     </style>
@@ -28,55 +123,59 @@
         <main id="board">
             <section class="view">
                 
-                   <table border="1">
+                   <table border="0">
                     <caption>글보기</caption>
                     <tr>
                         <td>제목</td>
                         <td>
-                            <input type="text" name="title" value="제목입니다.">
+                            <input type="text" name="title" value="제목입니다." readonly>
                         </td>
                     </tr>
                     <tr>
                         <td>첨부파일</td>
                         <td>
                             <a href="#">2020년 상반기 매출자료</a>
-                            <span>7회 다운로드</span>
+                            &nbsp;<span>7</span>회 다운로드
                         </td>
                     </tr>
                     <tr>
                         <td>내용</td>
                         <td>
-                           <textarea name="content" >내용 샘플입니다.</textarea>
+                           <textarea name="content" readonly>내용 샘플입니다.</textarea>
                         </td>
                     </tr>
                    </table>
                    <div>
-                    <a href="#" class="btn btnDelete">삭제</a>
-                    <a href="#" class="btn btnModify">수정</a>
-                    <a href="#" class="btn btnlist">목록</a>
+                    <a href="#" class="btn btnRemove">삭제</a>
+                    <a href="./modify.html" class="btn btnModify">수정</a>
+                    <a href="./list.html" class="btn btnList">목록</a>
                    </div>
+
+                   <!--댓글목록-->
                    <section class="commentList">
-                    <caption>댓글목록</caption>
+                    <h3>댓글목록</h3>
                     <article border="1">
-                        <span>
-                            <span>길동이</span>
-                            <span>20-05-13</span>
-                        </span>
-                        <textarea name="commet">댓글 샘플입니다.</textarea>
+                        <span class="nick">길동이</span>
+                        <span class="date">20-05-13</span>
+                        <p name="content">댓글 샘플입니다.</p>
                         <div>
-                            <a href="#">삭제</a>
-                            <a href="#">수정</a>
+                            <a href="#" class="remove">삭제</a>
+                            <a href="#" class="modify">수정</a>
                         </div>
                     </article>
+
                     <p class="empty">등록된 댓글이 없습니다. </p>
+
                    </section>
+
+                   <!--댓글쓰기-->
                    <section class="commentForm">
-                    <caption>댓글쓰기</caption>
+                    <h3>댓글쓰기</h3>
                     <form action="#">
-                        <textarea name="comment"></textarea>
+                        <textarea name="content">댓글내용 입력</textarea>
                         <div>
                             <a href="#" class="btn btnCancle">취소</a>
-                            <input type="text" class="btn btnWrite" value="작성완료">
+                            <input type="submit" class="btn btnComplete" value="작성완료">
                         </div>
                     </form>
                    </section>
