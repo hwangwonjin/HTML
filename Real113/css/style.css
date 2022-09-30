@@ -37,7 +37,7 @@ main > div{
     overflow: hidden;
 }
 main > div > div{
-    border: 1px solid green;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
 }
 main > div > .banner{
@@ -64,7 +64,7 @@ main > section>aside{
     width: 195px;
     height: 760px;
     margin-top: 5px;
-    border: 1px solid green;
+    border: 1px solid #d7d7d7;
     box-sizing: border-box;
 }
 main > section>article{
