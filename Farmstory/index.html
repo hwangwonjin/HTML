@@ -33,6 +33,67 @@
             background-image: url('./img/main_banner_sub2_bg.jpg');
         }
 
+        main > .latest >div > a {
+            position: absolute;
+            left: 0;
+            top: 16px;
+        }
+        main > .latest >div > img {
+            position: absolute;
+            left: 0;
+            bottom: 16px;
+        }
+
+        main > .latest table {
+            position: absolute;
+            right: 2px;
+            bottom: 6px;
+            clear: #6a6a6a;
+        }
+
+        main > .latest table tr > td > a{
+            display: block;
+            width: 140px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 18px;
+        }
+
+        main > .info > div:nth-child(1) {
+            width: 386px;
+        }
+        main > .info > div:nth-child(2) {
+            width: 230px;
+            padding-left: 16px;
+            border-left: 1px solid #d7d7d7;
+            border-right: 1px solid #d7d7d7;
+            box-sizing: border-box;
+        }
+        main > .info > div >.tit {
+            margin-bottom: 16px;
+        }
+
+        main > .info > div >.tel {
+            overflow: hidden;
+        }
+        main > .info > div > .tel > * {
+            float: left;
+            margin-left: 16px;
+        }
+        main > .info > div >.tel > .time {
+            line-height: 18px;
+            color: #666;
+        }
+
+        main > .info > div > .btns {
+            margin-top: 16px;
+        }
+
+        main > .info > div > .account {
+            line-height: 18px;
+            color: #666;
+        }
 
     </style>
 </head>
@@ -87,27 +148,27 @@
                     <img src="./img/main_latest1_img.jpg" alt="이미지">
                     <table border="1">
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
@@ -118,27 +179,27 @@
                    <img src="./img/main_latest2_img.jpg" alt="이미지">
                    <table border="1">
                     <tr>
-                        <td></td>
+                        <td>></td>
                         <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                         <td>20-12-22</td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>></td>
                         <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                         <td>20-12-22</td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>></td>
                         <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                         <td>20-12-22</td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>></td>
                         <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                         <td>20-12-22</td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>></td>
                         <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                         <td>20-12-22</td>
                     </tr>
@@ -149,27 +210,27 @@
                     <img src="./img/main_latest3_img.jpg" alt="이미지">
                     <table border="1">
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>></td>
                             <td><a href="#">토마토! 건강하게 길러서 안심하고 먹자</a></td>
                             <td>20-12-22</td>
                         </tr>
@@ -178,9 +239,36 @@
             </div>
             
             <div class="info">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
+                <div>
+                    <img src="./img/main_sub2_cs_tit.png" class="tit" alt="고객센터 안내"/>
+                    <div class="tel">
+                        <img src="./img/main_sub2_cs_img.png" alt="전화">
+                        <img src="./img/main_sub2_cs_txt.png" alt="1666-777">
+                        <p class="time">
+                            평일: AM 09:00 ~ PM 06:00<br>
+                            점심: PM 12:00 ~ PM 01:00<br>
+                            토, 일요일, 공휴일 휴무
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <a href="#"><img src="./img/main_sub2_cs_bt1.png" alt="1:1 고객문의"></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt2.png" alt="자주묻는질문"></a>
+                        <a href="#"><img src="./img/main_sub2_cs_bt3.png" alt="배송조회"></a>
+                    </div>
+                </div>
+                <div>
+                    <img src="./img/main_sub2_account_tit.png" class="tit" alt="계좌안내"/>
+                    <p class="account">
+                        기업은행 123-456789-01-01-012<br />
+                        국민은행 01-1234-56789<br />
+                        우리은행 123-456789-01-01-012<br />
+                        하나은행 123-456789-01-01<br />
+                        예 금 주 (주)팜스토리
+                    </p>
+                </div>
+                <div>
+                    
+                </div>
             </div>
         </main>
         <footer>

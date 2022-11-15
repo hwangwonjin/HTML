@@ -150,6 +150,7 @@ main > .latest {
     overflow: hidden;
 }
 main >.latest > div {
+    position: relative;
     float: left;
     width: 33.33%;
     height: 100%;
@@ -160,6 +161,7 @@ main >.latest > div {
 main > .info {
     height: 154px;
     overflow: hidden;
+    padding: 10px 0;
 }
 main > .info > div {
     float: left;
