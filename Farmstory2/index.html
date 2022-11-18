@@ -21,25 +21,64 @@
         }
 
         header{
+            position: relative;
             width: 100%;
             height: 147px;
             border: 1px solid #111;
             box-sizing: border-box;
         }
+
+        header > .gnb {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100%;
+            height: auto;
+            border: 1px solid #111;
+            box-sizing: border-box;
+        }
+
+        main > .slider {
+            height: 370px;
+            border: 1px solid purple;
+            box-sizing: border-box;
+        }
+
+
+
+        footer{
+            width: 100%;
+            height: 120px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
     </style>
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="gnb">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
             </ul>
         </header>
-        <main></main>
+        <main>
+            <div class="slider">1</div>
+            <div class="quick">2</div>
+            <div class="latest">3</div>
+            <div class="info">4</div>
+        </main>
         <footer></footer>
     </div>
 </body>
