@@ -51,7 +51,7 @@ header >.gnb {
     height: 50px;
     border: 1px solid green;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 header >.gnb > li {
     float: left;
@@ -72,6 +72,8 @@ header >.gnb > li > a{
     border: 1px solid pink;
     box-sizing: border-box;
     font-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0 -6px;
    
 }
 
@@ -110,7 +112,7 @@ header > .gnb > li:nth-child(5) > a:hover{
 header > .gnb > li > a > img {
     position: absolute;
     left: 50%;
-    top: 1px;
+    top: -27px;
 }
 
 /*메인*/
